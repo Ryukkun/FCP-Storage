@@ -8,14 +8,14 @@ execute if entity @e[nbt={Item:{tag:{FCP:{SetCP:3b}}}},distance=..5,scores={FCP.
 execute if entity @e[nbt={Item:{tag:{FCP:{SetCP:4b}}}},distance=..5,scores={FCP.CP-Num=0}] run scoreboard players set @s FCP.CP-Num 4
 
 # Save Pos
-execute as @s[scores={FCP.CP-Num=1}] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].CP1.Pos set from entity @s Pos
-execute as @s[scores={FCP.CP-Num=1}] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].CP1.Rotation set from entity @s Rotation
-execute as @s[scores={FCP.CP-Num=2}] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].CP2.Pos set from entity @s Pos
-execute as @s[scores={FCP.CP-Num=2}] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].CP2.Rotation set from entity @s Rotation
-execute as @s[scores={FCP.CP-Num=3}] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].CP3.Pos set from entity @s Pos
-execute as @s[scores={FCP.CP-Num=3}] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].CP3.Rotation set from entity @s Rotation
-execute as @s[scores={FCP.CP-Num=4}] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].CP4.Pos set from entity @s Pos
-execute as @s[scores={FCP.CP-Num=4}] run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].CP4.Rotation set from entity @s Rotation
+execute as @s[scores={FCP.CP-Num=1}] run data modify storage fcp: oh_my_dat._[-4][-4][-4][-4][-4][-4][-4][-4].CP1.Pos set from entity @s Pos
+execute as @s[scores={FCP.CP-Num=1}] run data modify storage fcp: oh_my_dat._[-4][-4][-4][-4][-4][-4][-4][-4].CP1.Rotation set from entity @s Rotation
+execute as @s[scores={FCP.CP-Num=2}] run data modify storage fcp: oh_my_dat._[-4][-4][-4][-4][-4][-4][-4][-4].CP2.Pos set from entity @s Pos
+execute as @s[scores={FCP.CP-Num=2}] run data modify storage fcp: oh_my_dat._[-4][-4][-4][-4][-4][-4][-4][-4].CP2.Rotation set from entity @s Rotation
+execute as @s[scores={FCP.CP-Num=3}] run data modify storage fcp: oh_my_dat._[-4][-4][-4][-4][-4][-4][-4][-4].CP3.Pos set from entity @s Pos
+execute as @s[scores={FCP.CP-Num=3}] run data modify storage fcp: oh_my_dat._[-4][-4][-4][-4][-4][-4][-4][-4].CP3.Rotation set from entity @s Rotation
+execute as @s[scores={FCP.CP-Num=4}] run data modify storage fcp: oh_my_dat._[-4][-4][-4][-4][-4][-4][-4][-4].CP4.Pos set from entity @s Pos
+execute as @s[scores={FCP.CP-Num=4}] run data modify storage fcp: oh_my_dat._[-4][-4][-4][-4][-4][-4][-4][-4].CP4.Rotation set from entity @s Rotation
 
 # Give
 clear @s lingering_potion{FCP:{Item:2b}}

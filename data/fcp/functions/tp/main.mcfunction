@@ -23,3 +23,4 @@ execute at @s if score $CP-Z1 FCP.MoveSC matches 1.. rotated 0 0 run function fc
 execute at @s if score $CP-Z1 FCP.MoveSC matches ..1 rotated 180 0 run function fcp:tp/1/30
 
 tag @s add FCP.Float-PL
+effect give @s levitation 1000 255 true
