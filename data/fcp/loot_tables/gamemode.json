@@ -1,0 +1,55 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:snowball",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"text\":\"-=‡ がめもで Creative ‡=-\",\"color\":\"light_purple\"}'},FCP:{Item:3b,GM:1b}}"
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:inverted",
+                "term": {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "player": {
+                      "gamemode": "creative"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:snowball",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"text\":\"-=‡ がめもで Adventure ‡=-\",\"color\":\"light_purple\"}'},FCP:{Item:3b,GM:2b}}"
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "player": {
+                    "gamemode": "creative"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
