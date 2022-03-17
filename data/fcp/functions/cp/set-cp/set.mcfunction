@@ -27,4 +27,4 @@ tag @s remove FCP.change-main
 
 # Effect
 playsound minecraft:entity.player.levelup ambient @s ~ ~ ~
-tellraw @s " FCP ▷▷ CPを設定しました :l"
+tellraw @s " FCP ▷▷ CPを設定しました :p"
