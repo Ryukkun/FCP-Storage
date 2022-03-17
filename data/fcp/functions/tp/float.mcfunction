@@ -10,7 +10,7 @@ execute if score @s FCP.CP-Num matches 4 run data modify storage fcp: TP set fro
 
 # TP
 kill @e[tag=FCP.Float]
-summon armor_stand ~ ~ ~ {Tags:["FCP.Float"],Marker:1b,Invisible:1b}
+summon armor_stand ~ ~ ~ {Tags:["FCP.Float"],Marker:1b,Invisible:1b,Silent:1b}
 
 data merge storage fcp: {TP:{Success:0b}}
 data modify entity @e[tag=FCP.Float,distance=..0.0001,limit=1] Rotation set from storage fcp: TP.Rotation
