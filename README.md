@@ -1,8 +1,8 @@
 # &nbsp;　FCP-Storage
-Entityを"ほぼ"使わっていないCPシステム。<br><br>
+Entityを"ほぼ"使っていないCPシステム。<br><br>
 
 ## ◈ 対応バージョン<br>
-  - 1.16 以上<br><br>
+  - 1.16.x 以上<br><br>
   
 ## ◈ 使い方
 ### 1. アイテム取得
